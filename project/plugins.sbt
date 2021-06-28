@@ -23,7 +23,8 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "1.0.0")
 addSbtPlugin("de.heikoseeberger" % "sbt-header" % "5.0.0") // for maintenance of copyright file header
 addSbtPlugin("com.hpe.sbt" % "sbt-pull-request-validator" % "1.0.0")
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.6.0-M5")
-addSbtPlugin("net.bzzt" % "sbt-reproducible-builds" % "0.21")
+// Needs to be bumped or it will fail the build by failing to connect to repo.bzzt.net
+addSbtPlugin("net.bzzt" % "sbt-reproducible-builds" % "0.22")
 
 // used for @unidoc directive
 libraryDependencies += "io.github.classgraph" % "classgraph" % "4.4.12"
