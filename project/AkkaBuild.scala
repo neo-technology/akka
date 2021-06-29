@@ -54,7 +54,7 @@ object AkkaBuild {
   }
 
   lazy val buildSettings = Dependencies.Versions ++ Seq(
-    organization := "com.typesafe.akka",
+    organization := "com.neo4j.akka",
     // use the same value as in the build scope
     version := (version in ThisBuild).value)
 
