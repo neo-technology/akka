@@ -35,7 +35,7 @@ class PruningStateSpec extends AnyWordSpec with Matchers {
     "merge owner correctly" in {
       val p1 = PruningInitialized(node1, Set.empty)
       val p2 = PruningInitialized(node2, Set.empty)
-      val expected = PruningInitialized(node1, Set.empty)
+      val expected = PruningInitialized(node2, Set.empty)
       p1.merge(p2) should be(expected)
       p2.merge(p1) should be(expected)
     }
